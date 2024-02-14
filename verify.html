@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atner - Verify</title>
+
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .coming-soon-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #000; /* Black background */
+            color: #ecf0f1;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .snowing {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: url('https://i.imgur.com/snow-image.jpg') repeat;
+            pointer-events: none;
+            animation: snowing 10s linear infinite;
+        }
+
+        @keyframes snowing {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: 100% 100%;
+            }
+        }
+
+        /* Header Styles */
+        header {
+            position: fixed;
+            width: 100%;
+            background: #333; /* Dark background color */
+            padding: 15px 0;
+            z-index: 1000;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .brand {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .nav {
+            display: flex;
+        }
+
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="snowing"></div>
+    <header>
+        <div class="header">
+            <a href="index.html" class="brand">
+                <h1> Atner&trade;</h1>
+            </a>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="store.html">Store</a>
+                <a href="https://discord.com/channels/1187703968688775189/1188339136327847996" target="_blank">Discord</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="coming-soon-container">
+        <h1>Atner</h1>
+        <p>Why do I have to verify</p>
+
+        <p>Introducing our robust and sophisticated Verification System, meticulously designed to fortify the security of our esteemed Discord server. This system stands as an impenetrable barrier against any potential infiltration attempts and safeguards the integrity of our community from malicious actors and automated bot incursions. Incorporated seamlessly within our server's architecture, our Verification System acts as a formidable deterrent against any form of raiding or unauthorized intrusion. Its intricate mechanisms are strategically devised to discern between genuine human participants and machine-driven entities. By seamlessly integrating verification into the onboarding process, we guarantee that only authentic individuals can gain access to our server, ensuring a tranquil and congenial environment for all members. Our Verification System operates as a sentinel, exercising stringent scrutiny to validate the authenticity of each participant. It acts as an impervious guardian, utilizing state-of-the-art algorithms to differentiate between human interaction and automated algorithms, guaranteeing that only genuine individuals can seamlessly become part of our vibrant and engaging community. Join us in embracing this advanced layer of protection, as we champion an environment of trust, camaraderie, and security. With our Verification System, you can be confident that your involvement is both valued and safeguarded, free from the disruptions that unsolicited bots and raiding endeavors might bring.</p>
+    </div>
+</body>
+
+</html>
