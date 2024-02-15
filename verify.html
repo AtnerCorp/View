@@ -1,107 +1,105 @@
-!DOCTYPE html>
-            <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Atner - Verify</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atner - Verify</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+            background: url('https://cdn.discordapp.com/attachments/1118040764912517120/1191162135888285756/standard.gif?ex=65a46f2f&is=6591fa2f&hm=7e31c45fde95467c57139866830f98ba569b003c3e4594efb0fa2bd84dacf54&') no-repeat center center fixed;
+            background-size: cover;
+        }
 
-                <style>
-                    body {
-                        margin: 0;
-                        overflow: hidden;
-                        font-family: 'Arial', sans-serif;
-                        background: url('https://cdn.discordapp.com/attachments/1118040764912517120/1191162135888285756/standard.gif?ex=65a46f2f&is=6591fa2f&hm=7e31c45fde95467c57139866830f98ba569b003c3e4594efb0fa2bd84dacf54&') no-repeat center center fixed;
-                        background-size: cover;
-                    }
+        .header {
+            position: fixed;
+            width: 100%;
+            background: #333;
+            padding: 15px 0;
+            z-index: 1000;
+        }
 
-                    .header {
-                        position: fixed;
-                        width: 100%;
-                        background: #333;
-                        padding: 15px 0;
-                        z-index: 1000;
-                    }
+        .coming-soon-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 5vh;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #ecf0f1;
+            text-align: center;
+            margin-top: 10px;
+            padding: 5px;
+        }
 
-                    .coming-soon-container {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                        height: 5vh;
-                        background-color: rgba(0, 0, 0, 0.7);
-                        color: #ecf0f1;
-                        text-align: center;
-                        margin-top: 10px;
-                        padding: 5px;
-                    }
+        h1 {
+            font-size: 1em;
+            margin-bottom: 5px;
+        }
 
-                    h1 {
-                        font-size: 1em;
-                        margin-bottom: 5px;
-                    }
+        .rules-container {
+            text-align: left;
+            max-width: 800px;
+            margin: 30px auto 20px; /* Added margin-top */
+            padding: 20px;
+            background-color: #111;
+            color: #fff;
+            border-radius: 10px;
+            overflow-y: auto;
+            max-height: 70vh;
+        }
 
-                    .rules-container {
-                        text-align: left;
-                        max-width: 800px;
-                        margin: 30px auto 20px; /* Added margin-top */
-                        padding: 20px;
-                        background-color: #111;
-                        color: #fff;
-                        border-radius: 10px;
-                        overflow-y: auto;
-                        max-height: 70vh;
-                    }
+        .rule:nth-child(even) {
+            background-color: #111; /* Darker gray */
+        }
 
-                    .rule:nth-child(even) {
-                        background-color: #111; /* Darker gray */
-                    }
+        .rule:nth-child(odd) {
+            background-color: #000; /* Black */
+        }
 
-                    .rule:nth-child(odd) {
-                        background-color: #000; /* Black */
-                    }
+        .rule {
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
 
-                    .rule {
-                        padding: 10px;
-                        border-radius: 5px;
-                        margin-bottom: 10px;
-                    }
+        .rule ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
 
-                    .rule ol {
-                        list-style-type: decimal;
-                        padding-left: 20px;
-                    }
+        .rule li {
+            margin-bottom: 10px;
+        }
 
-                    .rule li {
-                        margin-bottom: 10px;
-                    }
+        .search-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-                    .search-container {
-                        text-align: center;
-                        margin-bottom: 20px;
-                    }
+        input[type=text] {
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
 
-                    input[type=text] {
-                        width: 50%;
-                        padding: 12px 20px;
-                        margin: 8px 0;
-                        box-sizing: border-box;
-                    }
-                </style>
-            </head>
+<body>
+    <div class="coming-soon-container">
+        <h1>Atner&trade; - Verify Information</h1>
+    </div>
 
-            <body>
-                <div class="coming-soon-container">
-                    <h1> Atner&trade; - Verify Information</h1>
-                </div>
-
-              
-
-                <div class="rules-container">
-                    <div class="rule">
-                        <span class="rule-number">Introducing our robust and sophisticated Verification System, meticulously designed to fortify the security of our esteemed Discord server. This system stands as an impenetrable barrier against any potential infiltration attempts and safeguards the integrity of our community from malicious actors and automated bot incursions. Incorporated seamlessly within our server's architecture, our Verification System acts as a formidable deterrent against any form of raiding or unauthorized intrusion. Its intricate mechanisms are strategically devised to discern between genuine human participants and machine-driven entities. By seamlessly integrating verification into the onboarding process, we guarantee that only authentic individuals can gain access to our server, ensuring a tranquil and congenial environment for all members. Our Verification System operates as a sentinel, exercising stringent scrutiny to validate the authenticity of each participant. It acts as an impervious guardian, utilizing state-of-the-art algorithms to differentiate between human interaction and automated algorithms, guaranteeing that only genuine individuals can seamlessly become part of our vibrant and engaging community. Join us in embracing this advanced layer of protection, as we champion an environment of trust, camaraderie, and security. With our Verification System, you can be confident that your involvement is both valued and safeguarded, free from the disruptions that unsolicited bots and raiding endeavors might bring.</span>
-               </li>
-          </ol>
+    <div class="rules-container">
+        <div class="rule">
+            <span class="rule-number">Introducing our robust and sophisticated Verification System, meticulously designed to fortify the security of our esteemed Discord server. This system stands as an impenetrable barrier against any potential infiltration attempts and safeguards the integrity of our community from malicious actors and automated bot incursions. Incorporated seamlessly within our server's architecture, our Verification System acts as a formidable deterrent against any form of raiding or unauthorized intrusion. Its intricate mechanisms are strategically devised to discern between genuine human participants and machine-driven entities. By seamlessly integrating verification into the onboarding process, we guarantee that only authentic individuals can gain access to our server, ensuring a tranquil and congenial environment for all members. Our Verification System operates as a sentinel, exercising stringent scrutiny to validate the authenticity of each participant. It acts as an impervious guardian, utilizing state-of-the-art algorithms to differentiate between human interaction and automated algorithms, guaranteeing that only genuine individuals can seamlessly become part of our vibrant and engaging community. Join us in embracing this advanced layer of protection, as we champion an environment of trust, camaraderie, and security. With our Verification System, you can be confident that your involvement is both valued and safeguarded, free from the disruptions that unsolicited bots and raiding endeavors might bring.</span>
         </div>
-        
+    </div>
+</body>
+
 </html>
+
