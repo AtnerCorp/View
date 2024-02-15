@@ -545,26 +545,23 @@ header .links {
     color: var(--text);
 }
 
-#categories .items .item .about {
+#categories .items .item .description {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 15px;
-    display: flex;
-    align-items: flex-start; /* Align items to the top */
-    justify-content: flex-start; /* Align content to the start */
+    top: 10px; /* Adjust top position as needed */
+    left: 10px; /* Adjust left position as needed */
+    padding: 5px 10px; /* Adjust padding as needed */
     background: transparent; /* Transparent background initially */
     color: #fff; /* White text initially */
-    border-radius: 10px;
+    border-radius: 5px; /* Add border-radius for rounded corners */
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 
-#categories .items .item:hover .about {
+#categories .items .item:hover .description {
     background-color: transparent; /* Transparent background on hover */
     color: black; /* Black text on hover */
 }
+
 
 
 
