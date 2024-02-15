@@ -559,7 +559,7 @@ header .links {
 
 #categories .items .item:hover .description {
     background-color: transparent; /* Transparent background on hover */
-    color: black; /* Black text on hover */
+    color: transparent; /* Black text on hover */
 }
 
 
