@@ -554,16 +554,18 @@ header .links {
     display: flex;
     align-items: flex-start; /* Align items to the top */
     justify-content: flex-start; /* Align content to the start */
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    color: #fff;
+    background: transparent; /* Transparent background initially */
+    color: #fff; /* White text initially */
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 
-#categories .items .item .about:hover {
-    background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+#categories .items .item:hover .about {
+    background-color: black; /* Black background on hover */
+    color: black; /* Black text on hover */
 }
+
 #products .items .item .background {
     height: 200px;
     width: 100%;
