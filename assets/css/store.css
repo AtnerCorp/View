@@ -550,23 +550,20 @@ header .links {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    background: transparent;
     padding: 15px;
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: flex-start; /* Align content to the start */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: #fff;
+    border-radius: 10px;
     cursor: pointer;
-    font-weight: 500;
-    transition: 0.3s ease-in-out;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 
 #categories .items .item .about:hover {
-    background: transparent;
-    color: transparent;
-    border-radius: 40px;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
 }
-
 #products .items .item .background {
     height: 200px;
     width: 100%;
