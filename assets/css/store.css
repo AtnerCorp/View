@@ -562,9 +562,10 @@ header .links {
 }
 
 #categories .items .item:hover .about {
-    background-color: black; /* Black background on hover */
+    background-color: transparent; /* Transparent background on hover */
     color: black; /* Black text on hover */
 }
+
 
 
 
